@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Epsilon Arcade</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="browser-chrome" aria-hidden="true"><div class="traffic-lights"><i></i><i></i><i></i></div><div class="address-bar"><span>◈</span><b>×</b></div></div>
+    <main class="site-shell">
+        <aside class="sidebar">
+            <div class="brand-mark"><span>ε</span><div>THE<br><strong>EPSILON</strong><br>PROGRAM</div></div>
+            <div class="sidebar-rule"></div>
+            <nav aria-label="Main navigation">
+                <button class="nav-link active" data-filter="all">The Arcade</button>
+                <button class="nav-link" data-filter="puzzle">Mind &amp; Logic</button>
+                <button class="nav-link" data-filter="action">Action &amp; Reflex</button>
+                <button class="nav-link" data-filter="classic">Classics</button>
+                <button class="nav-link" data-filter="strategy">Strategy</button>
+            </nav>
+            <div class="sidebar-note">The tract is now being written.<br><span>Play responsibly.</span></div>
+        </aside>
+        <section class="content">
+            <header class="site-header"><div><p class="eyebrow">THE EPSILON PROGRAM / ARCHIVE 01</p><h1>Evaluate Your <em>Identity</em></h1></div></header>
+            <section class="featured-profile intro-profile"><div class="cris-portrait" role="img" aria-label="Stylized portrait of Cris Formage"><span>CF</span></div><div class="cris-message"><div class="cris-heading"><p class="eyebrow">HELLO, I'M CRIS FORMAGE</p><button class="speaker-button" id="crisSpeaker" type="button" aria-label="Play Cris Formage welcome message" title="Play welcome message">🔊</button></div><h3>Cris Formage</h3><p class="cris-quote">Hello, I'm Cris Formage. Welcome to The Epsilon Arcade...<br><br>A place where enlightenment, entertainment, and the truth come together. Here, every game has a meaning, every challenge reveals something new, and every player is one step closer to discovering the path.<br><br>So take a seat, clear your mind, and prepare yourself.<br><br>Kifflom.</p><span class="profile-meta">Epsilon Program · Spiritual advisor</span></div></section>
+            <section class="welcome-panel"><div><h2>Welcome to the Epsilon Arcade</h2><p>Do you want to be happy and free from thought, or continue dying in ignorance without knowing your true eternal self?</p><p>Choose a test below. There are <strong>19 ways</strong> to discover what you are made of.</p></div><div class="seal">ε<br><small>EST. ∞</small></div></section>
+            <div class="catalog-tools"><div class="catalog-title"><span>01</span><h2>Available Tests</h2></div><label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search the archive..." aria-label="Search games"></label></div>
+            <div class="game-grid" id="gameGrid"></div><p class="empty-state" id="emptyState" hidden>No test matches your search.</p>
+            <section class="player-voices" aria-labelledby="voicesTitle">
+                <div class="voices-heading"><p class="eyebrow">FIELD REPORTS / PLAYER VOICES</p><h2 id="voicesTitle">Words from the faithful</h2><p>Four reports from people who entered the archive and came back changed.</p></div>
+                <div class="comment-grid">
+                    <article class="comment-card"><div class="profile-line"><div class="profile-avatar michael">M</div><div><strong>Michael</strong><span>Los Santos · Collector</span></div></div><p>“The atmosphere is class. I came for one puzzle and lost an entire evening.”</p></article>
+                    <article class="comment-card"><div class="profile-line"><div class="profile-avatar franklin">F</div><div><strong>Franklin</strong><span>Strawberry · Speed runner</span></div></div><p>“Clean, fast, and surprisingly addictive. The reflex tests are no joke.”</p></article>
+                    <article class="comment-card"><div class="profile-line"><div class="profile-avatar trevor">T</div><div><strong>Trevor</strong><span>Sandy Shores · Wild card</span></div></div><p>“I broke the maze, the memory test, and possibly my own brain. Five stars.”</p></article>
+                    <article class="comment-card"><div class="profile-line"><div class="profile-avatar lamar">L</div><div><strong>Lamar</strong><span>Chamberlain Hills · Tastemaker</span></div></div><p>“This archive has style. Somebody finally made games feel important.”</p></article>
+                </div>
+                <div class="owner-reply"><div class="profile-avatar owner">ε</div><div><strong>GaMeS <span>(owner)</span></strong><p>Thank you for entering the archive. New tests are already being written.</p></div></div>
+            </section>
+        </section>
+    </main>
+    <div class="game-modal" id="gameModal" role="dialog" aria-modal="true" hidden><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close">×</button><p class="eyebrow">SELECTED TEST</p><h2 id="modalTitle">15 Puzzle</h2><p id="modalDescription"></p><div class="modal-game" id="modalGame"></div><button class="primary-button" id="startBtn">Begin test</button><button class="secondary-button" id="doneBtn" hidden>Submit result</button><p class="game-status" id="statusText">Arrange the tiles from 1 to 15.</p></div></div>
+    <audio id="arcadeMusic" autoplay loop preload="auto" src="Music/Images/gta-5-epsilon-program-music-128-ytshorts.savetube.me.mp3"></audio>
+    <audio id="crisVoice" preload="auto" src="Music/Cris-Formage-(GTA)-2026-09-20-20-53-Hello,-I'm-Cris-Formage.-Welcome-to-The-Epsilon.mp3"></audio>
+    <script src="js/js.js"></script>
+</body>
+</html>
