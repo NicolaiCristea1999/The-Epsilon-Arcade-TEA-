@@ -1,3 +1,59 @@
+const translations = {
+    ro: {
+        navLabel: 'Navigare principală', languageLabel: 'Selectarea limbii', navAll: 'Arcada', navPuzzle: 'Minte și logică', navAction: 'Acțiune și reflexe', navClassic: 'Clasice', navStrategy: 'Strategie',
+        sidebarNote: 'Tratatul este în curs de scriere.', sidebarNoteSub: 'Joacă responsabil.', archiveLabel: 'PROGRAMUL EPSILON / ARHIVA 01', heroTitle: 'Evaluează-ți <em>identitatea</em>', crisEyebrow: 'SALUT, SUNT CRIS FORMAGE', portraitLabel: 'Portret stilizat al lui Cris Formage', speakerLabel: 'Redă mesajul de bun venit al lui Cris Formage', speakerTitle: 'Redă mesajul de bun venit', crisQuote: 'Salut, sunt Chris Formage. Bun venit la Epsilon Arcade – locul unde divertismentul întâlnește iluminarea. Aici, fiecare joc are o semnificație, iar fiecare provocare te apropie de adevăr și de Cale. Relaxează-te, eliberează-ți mintea și pregătește-te să descoperi ceva nou. Kifflom!', profileMeta: 'Programul Epsilon · Consilier spiritual', welcomeTitle: 'Bun venit în Arcada Epsilon', welcomeQuestion: 'Vrei să fii fericit și eliberat de gânduri sau să continui să mori în ignoranță fără să-ți cunoști adevăratul sine etern?', welcomeChoice: 'Alege un test mai jos. Există <strong>19 moduri</strong> de a descoperi din ce ești făcut.', established: 'ÎNFIINȚAT ∞', availableTests: 'Teste disponibile', searchPlaceholder: 'Caută în arhivă...', searchLabel: 'Caută jocuri', emptyState: 'Niciun test nu corespunde căutării.', reportsLabel: 'RAPOARTE / VOCILE JUCĂTORILOR', voicesTitle: 'Cuvintele celor credincioși', voicesIntro: 'Patru rapoarte de la oameni care au intrat în arhivă și s-au întors schimbați.', michaelMeta: 'Los Santos · Colecționar', michaelQuote: '„Atmosfera este excelentă. Am venit pentru un puzzle și am pierdut o seară întreagă.”', franklinMeta: 'Strawberry · Vitezoman', franklinQuote: '„Curat, rapid și surprinzător de captivant. Testele de reflexe nu glumesc.”', trevorMeta: 'Sandy Shores · Imprevizibil', trevorQuote: '„Am spart labirintul, testul de memorie și poate chiar propriul creier. Cinci stele.”', lamarMeta: 'Chamberlain Hills · Cunoscător', lamarQuote: '„Arhiva asta are stil. În sfârșit cineva a făcut jocurile să pară importante.”', ownerLabel: '(proprietar)', ownerReply: 'Mulțumim că ai intrat în arhivă. Noi teste sunt deja în pregătire.', close: 'Închide', selectedTest: 'TEST SELECTAT', beginTest: 'Începe testul', submitResult: 'Trimite rezultatul', puzzleStatus: 'Așază piesele de la 1 la 15.', restartTest: 'Repornește testul', playAgain: 'Joacă din nou', beginReady: 'Începe când ești pregătit.', categoryPuzzle: 'minte și logică', categoryAction: 'reflexe și curaj', categoryClassic: 'răbdare și instinct', categoryStrategy: 'strategie și planificare', genericDescription: 'Un test de {category}.', closeSpeaker: 'Cris Formage vorbește', testLabel: 'TEST',
+        statusSolved: 'Ai rezolvat puzzle-ul. Identitatea ta este provizoriu intactă.', statusSolvedShort: 'Ai rezolvat puzzle-ul.', statusIncomplete: 'Nu este terminat. Modelul rămâne incomplet.', statusComplete: 'Test finalizat. Rezultatul tău a fost înregistrat.', statusCorrect: 'Corect. Continuă.', statusWrong: 'Secvența s-a pierdut. Începe din nou.'
+    },
+    ru: {
+        navLabel: 'Главная навигация', languageLabel: 'Выбор языка', navAll: 'Аркада', navPuzzle: 'Разум и логика', navAction: 'Действие и реакция', navClassic: 'Классика', navStrategy: 'Стратегия',
+        sidebarNote: 'Трактат уже пишется.', sidebarNoteSub: 'Играйте ответственно.', archiveLabel: 'ПРОГРАММА ЭПСИЛОН / АРХИВ 01', heroTitle: 'Оцени свою <em>личность</em>', crisEyebrow: 'ПРИВЕТ, Я КРИС ФОРМАЖ', portraitLabel: 'Стилизованный портрет Криса Формaжа', speakerLabel: 'Воспроизвести приветствие Криса Формaжа', speakerTitle: 'Воспроизвести приветствие', crisQuote: 'Привет, я Крис Формaж. Добро пожаловать в Аркаду Эпсилон...<br><br>Место, где просветление, развлечения и истина встречаются. Здесь у каждой игры есть смысл, каждое испытание открывает что-то новое, а каждый игрок становится на шаг ближе к своему пути.<br><br>Садись, очисти разум и приготовься.<br><br>Kifflom.', profileMeta: 'Программа Эпсилон · Духовный советник', welcomeTitle: 'Добро пожаловать в Аркаду Эпсилон', welcomeQuestion: 'Ты хочешь быть счастливым и свободным от мыслей или продолжишь умирать в неведении, не зная своего истинного вечного «я»?', welcomeChoice: 'Выбери испытание ниже. Есть <strong>19 способов</strong> узнать, из чего ты сделан.', established: 'ОСНОВАНА ∞', availableTests: 'Доступные испытания', searchPlaceholder: 'Искать в архиве...', searchLabel: 'Поиск игр', emptyState: 'Поиск не нашёл испытаний.', reportsLabel: 'ПОЛЕВЫЕ ОТЧЁТЫ / ГОЛОСА ИГРОКОВ', voicesTitle: 'Слова верных', voicesIntro: 'Четыре отчёта людей, вошедших в архив и вернувшихся другими.', michaelMeta: 'Лос-Сантос · Коллекционер', michaelQuote: '«Атмосфера отличная. Я пришёл ради одной головоломки и потерял целый вечер.»', franklinMeta: 'Строберри · Спидраннер', franklinQuote: '«Чисто, быстро и неожиданно затягивает. Испытания реакции не шутят.»', trevorMeta: 'Сэнди-Шорс · Непредсказуемый', trevorQuote: '«Я сломал лабиринт, тест памяти и, возможно, собственный мозг. Пять звёзд.»', lamarMeta: 'Чемберлен-Хиллз · Знаток', lamarQuote: '«У этого архива есть стиль. Наконец-то кто-то сделал игры важными.»', ownerLabel: '(владелец)', ownerReply: 'Спасибо, что вошли в архив. Новые испытания уже создаются.', close: 'Закрыть', selectedTest: 'ВЫБРАННОЕ ИСПЫТАНИЕ', beginTest: 'Начать испытание', submitResult: 'Отправить результат', puzzleStatus: 'Расставьте плитки от 1 до 15.', restartTest: 'Начать заново', playAgain: 'Играть снова', beginReady: 'Начните, когда будете готовы.', categoryPuzzle: 'память и логика', categoryAction: 'реакция и смелость', categoryClassic: 'терпение и инстинкт', categoryStrategy: 'стратегия и планирование', genericDescription: 'Испытание на {category}.', closeSpeaker: 'Крис Формaж говорит', testLabel: 'ИСПЫТАНИЕ',
+        statusSolved: 'Головоломка решена. Твоя личность пока в порядке.', statusSolvedShort: 'Головоломка решена.', statusIncomplete: 'Ещё не готово. Узoр остаётся незавершённым.', statusComplete: 'Испытание завершено. Результат записан.', statusCorrect: 'Верно. Продолжайте.', statusWrong: 'Последовательность потеряна. Начните снова.'
+    },
+    en: {
+        navLabel: 'Main navigation', languageLabel: 'Language selection', navAll: 'The Arcade', navPuzzle: 'Mind & Logic', navAction: 'Action & Reflex', navClassic: 'Classics', navStrategy: 'Strategy', sidebarNote: 'The tract is now being written.', sidebarNoteSub: 'Play responsibly.', archiveLabel: 'THE EPSILON PROGRAM / ARCHIVE 01', heroTitle: 'Evaluate Your <em>Identity</em>', crisEyebrow: "HELLO, I'M CRIS FORMAGE", portraitLabel: 'Stylized portrait of Cris Formage', speakerLabel: 'Play Cris Formage welcome message', speakerTitle: 'Play welcome message', crisQuote: "Hello, I'm Cris Formage. Welcome to The Epsilon Arcade...<br><br>A place where enlightenment, entertainment, and the truth come together. Here, every game has a meaning, every challenge reveals something new, and every player is one step closer to discovering the path.<br><br>So take a seat, clear your mind, and prepare yourself.<br><br>Kifflom.", profileMeta: 'Epsilon Program · Spiritual advisor', welcomeTitle: 'Welcome to the Epsilon Arcade', welcomeQuestion: 'Do you want to be happy and free from thought, or continue dying in ignorance without knowing your true eternal self?', welcomeChoice: 'Choose a test below. There are <strong>19 ways</strong> to discover what you are made of.', established: 'EST. ∞', availableTests: 'Available Tests', searchPlaceholder: 'Search the archive...', searchLabel: 'Search games', emptyState: 'No test matches your search.', reportsLabel: 'FIELD REPORTS / PLAYER VOICES', voicesTitle: 'Words from the faithful', voicesIntro: 'Four reports from people who entered the archive and came back changed.', michaelMeta: 'Los Santos · Collector', michaelQuote: '“The atmosphere is class. I came for one puzzle and lost an entire evening.”', franklinMeta: 'Strawberry · Speed runner', franklinQuote: '“Clean, fast, and surprisingly addictive. The reflex tests are no joke.”', trevorMeta: 'Sandy Shores · Wild card', trevorQuote: '“I broke the maze, the memory test, and possibly my own brain. Five stars.”', lamarMeta: 'Chamberlain Hills · Tastemaker', lamarQuote: '“This archive has style. Somebody finally made games feel important.”', ownerLabel: '(owner)', ownerReply: 'Thank you for entering the archive. New tests are already being written.', close: 'Close', selectedTest: 'SELECTED TEST', beginTest: 'Begin test', submitResult: 'Submit result', puzzleStatus: 'Arrange the tiles from 1 to 15.', restartTest: 'Restart test', playAgain: 'Play again', beginReady: 'Begin when you are ready.', categoryPuzzle: 'memory and logic', categoryAction: 'timing and nerve', categoryClassic: 'patience and instinct', categoryStrategy: 'strategy and planning', genericDescription: 'A test of {category}.', closeSpeaker: 'Cris Formage is speaking', testLabel: 'TEST', statusSolved: 'You solved the puzzle. Your identity is provisionally intact.', statusSolvedShort: 'You solved the puzzle.', statusIncomplete: 'Not finished. The pattern remains incomplete.', statusComplete: 'Test complete. Your result has been recorded.', statusCorrect: 'Correct. Continue.', statusWrong: 'Sequence lost. Begin again.' }
+};
+translations.ru.crisQuote = 'Привет, я Крис Формаж. Добро пожаловать в «Эпсилон Аркаду» — место, где развлечения встречаются с просветлением. Здесь каждая игра имеет смысл, а каждое испытание приближает тебя к истине и Пути. Расслабься, очисти разум и приготовься открыть нечто новое. Киффлом!';
+translations.ro.loadingLabel = 'ARHIVA EPSILON / CONECTARE';
+translations.ro.loadingTitle = 'Se pregătește calea';
+translations.ro.loadingMessage = 'Arhiva se calibrează pentru sosirea ta.';
+translations.ru.loadingLabel = 'АРХИВ ЭПСИЛОН / ПОДКЛЮЧЕНИЕ';
+translations.ru.loadingTitle = 'Путь готовится';
+translations.ru.loadingMessage = 'Архив настраивается для твоего прибытия.';
+translations.en.loadingLabel = 'EPSILON ARCHIVE / CONNECTING';
+translations.en.loadingTitle = 'Preparing your path';
+translations.en.loadingMessage = 'Calibrating the archive for your arrival.';
+let currentLanguage = 'ro';
+function t(key) { return translations[currentLanguage][key] || translations.en[key] || key; }
+function localizedCategory(category) { return t(`category${category[0].toUpperCase()}${category.slice(1)}`); }
+function localizedDescription(game) { return currentLanguage === 'en' ? game[1] : t('genericDescription').replace('{category}', localizedCategory(game[2])); }
+function applyTranslations() {
+    document.documentElement.lang = currentLanguage;
+    document.querySelectorAll('[data-i18n]').forEach((element) => { element.innerHTML = t(element.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-attr]').forEach((element) => element.dataset.i18nAttr.split(';').forEach((item) => { const [attribute, key] = item.split(':'); element.setAttribute(attribute, t(key)); }));
+    document.querySelectorAll('.language-button').forEach((button) => { button.classList.toggle('active', button.dataset.language === currentLanguage); });
+    if (currentGame) { const game = games.find((item) => item[0] === currentGame); if (game) { modalDescriptionEl.textContent = localizedDescription(game); } }
+    renderGames(document.querySelector('.nav-link.active')?.dataset.filter || 'all', searchEl?.value || '');
+}
+let loadingTimer;
+let loadingComplete = false;
+function showLoadingScreen() {
+    clearTimeout(loadingTimer);
+    loadingComplete = false;
+    arcadeMusic.pause();
+    loadingScreen.classList.remove('is-hidden');
+    let progress = 0;
+    loadingProgress.style.width = '0%';
+    loadingPercent.textContent = '0%';
+    const tick = () => {
+        progress = Math.min(progress + Math.ceil((100 - progress) * .16), 100);
+        loadingProgress.style.width = `${progress}%`;
+        loadingPercent.textContent = `${progress}%`;
+        if (progress < 100) window.setTimeout(tick, 55);
+    };
+    tick();
+    loadingTimer = window.setTimeout(() => { loadingComplete = true; loadingScreen.classList.add('is-hidden'); startArcadeMusic(); }, 820);
+}
+
 const games = [
     ['15 Puzzle', 'Arrange the tiles and restore order.', 'puzzle', '▦'], ['Epsilon Memory', 'Remember the sequence. Forget nothing.', 'puzzle', '◈'], ['Cipher Wheel', 'Decode the message before time dissolves.', 'puzzle', '◎'], ['The Maze', 'Find the path hidden in plain sight.', 'puzzle', '⌁'], ['Pattern Breaker', 'See the shape behind the noise.', 'puzzle', '◇'], ['Word Oracle', 'The right word is already inside you.', 'puzzle', 'Aa'], ['Neon Runner', 'React quickly. The world will not wait.', 'action', '↯'], ['Signal Catcher', 'Catch the falling signal.', 'action', '⌁'], ['Orbit', 'Keep your satellite in the light.', 'action', '◌'], ['Reflex Test', 'How fast can you answer?', 'action', '◉'], ['Asteroid Field', 'Pilot through the quiet dark.', 'action', '✦'], ['Gridlock', 'Move with intention, never panic.', 'action', '⊞'], ['Solitaire', 'A classic test of patience.', 'classic', '♠'], ['Minesweeper', 'Every square contains a possibility.', 'classic', '✹'], ['Snake', 'Grow without touching your past.', 'classic', '∿'], ['Tic Tac Toe', 'Two minds. Nine squares.', 'classic', '×'], ['Breakout', 'Return the ball to sender.', 'classic', '▰'], ['Hangman', 'A word is worth a thousand guesses.', 'classic', 'Α'], ['Connect Four', 'Align your thinking.', 'classic', '●']
 ];
@@ -56,6 +112,16 @@ const emptyStateEl = document.getElementById('emptyState');
 const arcadeMusic = document.getElementById('arcadeMusic');
 const crisVoice = document.getElementById('crisVoice');
 const crisSpeaker = document.getElementById('crisSpeaker');
+const loadingScreen = document.getElementById('loadingScreen');
+const loadingProgress = document.getElementById('loadingProgress');
+const loadingPercent = document.getElementById('loadingPercent');
+const voiceTracks = {
+    ro: "Music/Cris-Formage-(GTA)-2026-09-22-16-33-[soft]-Saloot,-sunt-Chris-Formage.-[short-pause].mp3",
+    ru: 'Music/Cris-Formage-(GTA)-2026-09-22-16-31-Привет,-я-Крис-Формаж.-[joyful]-Добро-пожаловать.mp3',
+    en: "Music/Images/Cris-Formage-(GTA)-2026-09-22-16-28-Hello,-I'm-Cris-Formage.-Welcome-to-The-Epsilon.mp3"
+};
+let voiceRequested = false;
+let fallbackSpeechActive = false;
 
 function solvedBoard() { return Array.from({ length: totalTiles }, (_, index) => (index + 1) % totalTiles); }
 function neighbors(index) {
@@ -77,18 +143,18 @@ function renderPuzzle() {
 function moveTile(index) {
     const emptyIndex = board.indexOf(0); if (!gameStarted || gameSolved || !neighbors(emptyIndex).includes(index)) return;
     [board[index], board[emptyIndex]] = [board[emptyIndex], board[index]]; renderPuzzle();
-    if (isSolved()) { gameSolved = true; statusEl.textContent = 'You solved the puzzle. Your identity is provisionally intact.'; doneBtn.hidden = true; }
+    if (isSolved()) { gameSolved = true; statusEl.textContent = t('statusSolved'); doneBtn.hidden = true; }
 }
-function startGame() { gameStarted = true; gameSolved = false; shuffleBoard(); renderPuzzle(); statusEl.textContent = 'Arrange the tiles from 1 to 15.'; startBtn.textContent = 'Restart test'; }
-function finishGame() { if (!gameStarted) return; statusEl.textContent = isSolved() ? 'You solved the puzzle.' : 'Not finished. The pattern remains incomplete.'; }
+function startGame() { gameStarted = true; gameSolved = false; shuffleBoard(); renderPuzzle(); statusEl.textContent = t('puzzleStatus'); startBtn.textContent = t('restartTest'); }
+function finishGame() { if (!gameStarted) return; statusEl.textContent = isSolved() ? t('statusSolvedShort') : t('statusIncomplete'); }
 function beginMiniGame() {
     gameStarted = true; miniProgress = 0; startBtn.textContent = 'Restart test'; doneBtn.hidden = true;
     if (currentGame === '15 Puzzle') { startGame(); return; }
     if (currentGame === 'Akinator') { startAkinator(); return; }
     renderMiniGame();
 }
-function passMiniGame(message = 'Test complete. Your result has been recorded.') {
-    miniProgress = 5; statusEl.textContent = message; startBtn.textContent = 'Play again';
+function passMiniGame(message = t('statusComplete')) {
+    miniProgress = 5; statusEl.textContent = message; startBtn.textContent = t('playAgain');
 }
 function renderMiniGame() {
     modalGameEl.innerHTML = '';
@@ -189,31 +255,50 @@ function flipGardenCard(card, index) {
     }
 }
 function renderGames(filter = 'all', query = '') {
-    gridEl.innerHTML = ''; const visibleGames = games.filter((game) => (filter === 'all' || game[2] === filter) && `${game[0]} ${game[1]}`.toLowerCase().includes(query.toLowerCase()));
-    visibleGames.forEach(([title, description, category, icon], index) => { const card = document.createElement('article'); card.className = 'game-card'; card.style.animationDelay = `${index * 35}ms`; const number = String(games.findIndex((game) => game[0] === title) + 1).padStart(2, '0'); card.innerHTML = `<span class="game-number">${number}</span><div class="game-icon">${icon}</div><h3>${title}</h3><p>${description}</p><span class="tag">${category}</span>`; card.addEventListener('click', () => openGame(title, description)); gridEl.appendChild(card); });
+    gridEl.innerHTML = ''; const normalizedQuery = query.trim().toLocaleLowerCase(); const visibleGames = games.filter((game) => (!normalizedQuery && filter !== 'all' ? game[2] === filter : true) && `${game[0]} ${game[1]} ${localizedDescription(game)} ${localizedCategory(game[2])}`.toLocaleLowerCase().includes(normalizedQuery));
+    visibleGames.forEach(([title, originalDescription, category, icon], index) => { const description = localizedDescription([title, originalDescription, category, icon]); const card = document.createElement('article'); card.className = 'game-card'; card.style.animationDelay = `${index * 35}ms`; const number = String(games.findIndex((game) => game[0] === title) + 1).padStart(2, '0'); card.innerHTML = `<span class="game-number">${number}</span><div class="game-icon">${icon}</div><h3>${title}</h3><p>${description}</p><span class="tag">${localizedCategory(category)}</span>`; card.addEventListener('click', () => openGame(title, description)); gridEl.appendChild(card); });
     emptyStateEl.hidden = visibleGames.length > 0;
 }
-function openGame(title, description) { clearInterval(modeTimer); currentGame = title.trim(); modalTitleEl.textContent = currentGame; modalDescriptionEl.textContent = description; modalEl.hidden = false; gameStarted = false; gameSolved = false; doneBtn.hidden = true; startBtn.hidden = false; startBtn.textContent = 'Begin test'; statusEl.textContent = currentGame === '15 Puzzle' ? 'Arrange the tiles from 1 to 15.' : 'Begin when you are ready.'; modalGameEl.innerHTML = '<div class="seal" style="margin:auto">ε<br><small>TEST</small></div>'; startArcadeMusic(); if (currentGame === 'Akinator') startAkinator(); }
+function openGame(title) { clearInterval(modeTimer); currentGame = title.trim(); const game = games.find((item) => item[0] === currentGame); modalTitleEl.textContent = currentGame; modalDescriptionEl.textContent = localizedDescription(game); modalEl.hidden = false; gameStarted = false; gameSolved = false; doneBtn.hidden = true; startBtn.hidden = false; startBtn.textContent = t('beginTest'); statusEl.textContent = currentGame === '15 Puzzle' ? t('puzzleStatus') : t('beginReady'); modalGameEl.innerHTML = `<div class="seal" style="margin:auto">ε<br><small>${t('testLabel')}</small></div>`; startArcadeMusic(); if (currentGame === 'Akinator') startAkinator(); }
 
-function startArcadeMusic() { arcadeMusic.volume = 1; arcadeMusic.play().catch(() => {}); }
+function startArcadeMusic() { if (!loadingComplete) return; arcadeMusic.volume = 1; arcadeMusic.play().catch(() => {}); }
+function voiceText() { return translations[currentLanguage === 'ru' ? 'ru' : currentLanguage === 'en' ? 'en' : 'ro'].crisQuote.replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, ''); }
+function speakWelcomeFallback() {
+    if (!('speechSynthesis' in window) || fallbackSpeechActive) return;
+    fallbackSpeechActive = true;
+    window.speechSynthesis.cancel();
+    const speech = new SpeechSynthesisUtterance(voiceText());
+    speech.lang = currentLanguage === 'ru' ? 'ru-RU' : 'ro-RO';
+    speech.rate = .94;
+    speech.onend = () => { fallbackSpeechActive = false; crisSpeaker.classList.remove('speaking'); crisSpeaker.setAttribute('aria-label', t('speakerLabel')); startArcadeMusic(); };
+    window.speechSynthesis.speak(speech);
+}
 function playCrisWelcome() {
     arcadeMusic.pause();
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    fallbackSpeechActive = false;
+    voiceRequested = true;
     crisVoice.currentTime = 0;
     crisVoice.volume = 1;
     crisSpeaker.classList.add('speaking');
-    crisSpeaker.setAttribute('aria-label', 'Cris Formage is speaking');
-    crisVoice.play().catch(() => { arcadeMusic.play().catch(() => {}); });
+    crisSpeaker.setAttribute('aria-label', t('closeSpeaker'));
+    crisVoice.play().catch(() => { speakWelcomeFallback(); });
 }
 crisSpeaker.addEventListener('click', playCrisWelcome);
+crisVoice.addEventListener('error', () => { if (voiceRequested) speakWelcomeFallback(); });
 crisVoice.addEventListener('ended', () => {
+    voiceRequested = false;
     crisSpeaker.classList.remove('speaking');
-    crisSpeaker.setAttribute('aria-label', 'Play Cris Formage welcome message');
+    crisSpeaker.setAttribute('aria-label', t('speakerLabel'));
     arcadeMusic.volume = 1;
     startArcadeMusic();
 });
 
 document.querySelectorAll('.nav-link').forEach((button) => button.addEventListener('click', () => { document.querySelectorAll('.nav-link').forEach((item) => item.classList.remove('active')); button.classList.add('active'); renderGames(button.dataset.filter, searchEl.value); }));
-searchEl.addEventListener('input', () => renderGames(document.querySelector('.nav-link.active').dataset.filter, searchEl.value));
+document.querySelectorAll('.language-button').forEach((button) => button.addEventListener('click', () => { currentLanguage = button.dataset.language; showLoadingScreen(); voiceRequested = false; fallbackSpeechActive = false; if ('speechSynthesis' in window) window.speechSynthesis.cancel(); crisVoice.pause(); crisVoice.src = voiceTracks[currentLanguage]; crisVoice.load(); applyTranslations(); }));
+function searchArchive() { renderGames(document.querySelector('.nav-link.active').dataset.filter, searchEl.value); }
+searchEl.addEventListener('input', searchArchive);
+searchEl.addEventListener('search', searchArchive);
 document.getElementById('modalClose').addEventListener('click', () => { modalEl.hidden = true; });
 modalEl.addEventListener('click', (event) => { if (event.target === modalEl) modalEl.hidden = true; });
 startBtn.addEventListener('click', beginMiniGame); doneBtn.addEventListener('click', finishGame);
@@ -221,4 +306,5 @@ document.addEventListener('DOMContentLoaded', startArcadeMusic, { once: true });
 window.addEventListener('load', startArcadeMusic, { once: true });
 window.addEventListener('pageshow', startArcadeMusic);
 document.addEventListener('pointerdown', startArcadeMusic, { once: true });
-renderGames();
+applyTranslations();
+showLoadingScreen();
